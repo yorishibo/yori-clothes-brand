@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YORISHIBO — Official Merch</title>
+<style>
+:root{--bg:#080808;--card:#111;--text:#f5f5f5;--muted:#999;--line:#242424;--accent:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.announcement{padding:10px;text-align:center;background:#fff;color:#000;font-size:12px;font-weight:800;letter-spacing:1.5px}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(8,8,8,.92);backdrop-filter:blur(12px);z-index:5}
+.logo{font-weight:1000;letter-spacing:3px;font-size:20px}.navlinks{display:flex;gap:28px;font-size:13px;font-weight:700}.cart{border:1px solid #444;padding:10px 14px;border-radius:999px;font-size:12px}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:80px 20px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,#383838 0%,#151515 35%,transparent 70%);filter:blur(20px);opacity:.6}
+.hero>*{position:relative}.eyebrow{font-size:11px;letter-spacing:4px;color:#aaa;margin-bottom:18px}.hero h1{font-size:clamp(54px,11vw,150px);line-height:.82;margin:0;font-weight:1000;letter-spacing:-6px}.hero p{max-width:560px;margin:28px auto;color:#aaa;line-height:1.7}.btn{display:inline-block;background:#fff;color:#000;padding:15px 24px;border-radius:3px;font-size:12px;font-weight:900;letter-spacing:1px}
+.section{padding:90px 6%}.sectionhead{display:flex;justify-content:space-between;align-items:end;margin-bottom:32px}.section h2{font-size:34px;margin:0;letter-spacing:-1px}.muted{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:var(--card);border:1px solid var(--line);overflow:hidden}.productimg{aspect-ratio:1/1.12;background:#111;display:grid;place-items:center;position:relative;overflow:hidden}.productimg img{width:100%;height:100%;object-fit:cover;display:block}.productimg span{display:none}.tag{position:absolute;top:12px;left:12px;background:#fff;color:#000;padding:6px 8px;font-size:9px;font-weight:900}.info{padding:17px}.info h3{margin:0 0 7px;font-size:14px}.price{font-size:13px;color:#bbb}.add{width:100%;margin-top:15px;padding:11px;background:#fff;border:0;font-weight:900;cursor:pointer}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.storybox{border:1px solid var(--line);min-height:430px;background:radial-gradient(circle at 50% 40%,#252525,#090909 65%);display:grid;place-items:center}.storybox div{font-size:70px;font-weight:1000;letter-spacing:-5px;transform:rotate(-12deg)}.storytext h2{font-size:42px;line-height:1;margin:0 0 20px}.storytext p{color:#aaa;line-height:1.8}
+footer{border-top:1px solid var(--line);padding:45px 6%;display:flex;justify-content:space-between;color:#888;font-size:12px}.cartpanel{position:fixed;right:18px;bottom:18px;background:#fff;color:#000;padding:13px 18px;border-radius:999px;font-weight:900;font-size:12px;display:none;z-index:10}
+@media(max-width:800px){.navlinks{display:none}.grid{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr}.hero h1{letter-spacing:-3px}.section{padding:65px 5%}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.hero{min-height:70vh}.storybox{min-height:300px}}
+
+.manga-feature{margin-top:42px;border:1px solid var(--line);background:#0d0d0d;display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:42px;padding:28px;align-items:center}
+.manga-feature img{width:100%;display:block;box-shadow:0 18px 45px rgba(0,0,0,.55)}
+.manga-copy .eyebrow{margin-bottom:12px}.manga-copy h2{font-size:42px;line-height:.95;margin:0 0 18px}.manga-copy p{color:#aaa;line-height:1.8;max-width:580px}
+.coming{display:inline-block;margin-top:18px;border:1px solid #555;padding:12px 16px;font-size:11px;font-weight:900;letter-spacing:1.5px}
+@media(max-width:800px){.manga-feature{grid-template-columns:1fr;padding:18px}.manga-copy h2{font-size:34px}}
+""</style>
+</head>
+<body>
+<div class="announcement">OFFICIAL YORISHIBO MERCH — LIMITED DROPS</div>
+<nav><div class="logo">YORISHIBO®</div><div class="navlinks"><a href="#shop">SHOP</a><a href="#manga">MANGA</a><a href="#story">STORY</a><a href="#contact">CONTACT</a></div><div class="cart">CART <span id="count">0</span></div></nav>
+
+<section class="hero">
+<div>
+<div class="eyebrow">DRAGON GENERATION / OFFICIAL STORE</div>
+<h1>FIGHT.<br>LAUGH.<br>REPEAT.</h1>
+<p>Original Yorishibo gear for the people who keep moving when the world says stop.</p>
+<a class="btn" href="#shop">SHOP THE DROP</a>
+</div>
+</section>
+
+<section class="section" id="shop">
+<div class="sectionhead"><div><div class="eyebrow">DROP 001</div><h2>THE COLLECTION</h2></div><div class="muted">4 pieces / more coming</div></div><p class="muted" style="margin:-15px 0 28px">Product visuals are shown directly on each item so shoppers can see what they are buying. Final product photos can replace these mockups later.</p>
+<div class="grid">
+<article class="product"><div class="productimg"><img src="yorishibo_core_tee.jpg" alt="Yorishibo Core Tee product mockup"><div class="tag">NEW</div></div><div class="info"><h3>YORISHIBO CORE TEE</h3><div class="price">$35.00</div><button class="add" data-name="Yorishibo Core Tee" data-price="35">ADD TO CART</button></div></article>
+<article class="product"><div class="productimg"><img src="dragon_generation_tee.jpg" alt="Dragon Generation Tee product mockup"></div><div class="info"><h3>DRAGON GENERATION TEE</h3><div class="price">$35.00</div><button class="add" data-name="Dragon Generation Tee" data-price="35">ADD TO CART</button></div></article>
+<article class="product"><div class="productimg"><img src="yorishibo_hoodie.jpg" alt="Yorishibo Hoodie product mockup"><div class="tag">LIMITED</div></div><div class="info"><h3>YORISHIBO HOODIE</h3><div class="price">$65.00</div><button class="add" data-name="Yorishibo Hoodie" data-price="65">ADD TO CART</button></div></article>
+<article class="product"><div class="productimg"><img src="yorishibo_cap.jpg" alt="Burnout Collection Cap product mockup"></div><div class="info"><h3>BURNOUT COLLECTION CAP</h3><div class="price">$28.00</div><button class="add" data-name="Burnout Collection Cap" data-price="28">ADD TO CART</button></div></article>
+</div>
+
+<div class="manga-feature" id="manga">
+  <img src="yorishibo_manga_product.jpg" alt="Yorishibo: The Last Laugh Book 1 product">
+  <div class="manga-copy">
+    <div class="eyebrow">UPCOMING MANGA / BOOK 1</div>
+    <h2>YORISHIBO:<br>THE LAST LAUGH</h2>
+    <p>The manga adaptation of the Yorishibo story you're building across the movies and show. Follow Yorishibo from his ordinary younger years through the fights, friendships, losses, and moments that shape the legend.</p>
+    <div class="coming">COMING SOON — PRE-ORDERS WILL OPEN HERE</div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="story">
+<div class="story"><div class="storybox"><div>YORI.</div></div><div class="storytext"><div class="eyebrow">THE BRAND</div><h2>BUILT FROM<br>THE LEGEND.</h2><p>Yorishibo is more than a character. It's a world, a mindset, and a story about fighting through whatever comes next. This first drop turns that energy into wearable pieces.</p><a class="btn" href="#shop">EXPLORE MERCH</a></div></div>
+</section>
+
+<section class="section" id="contact"><div class="sectionhead"><div><div class="eyebrow">STAY IN THE LOOP</div><h2>NEW DROPS SOON.</h2></div><div class="muted">Replace this with your email/social links.</div></div></section>
+<footer><div>© 2026 YORISHIBO / DRAGON GENERATION</div><div>@.yorishib0 &nbsp; @yori.ig</div></footer>
+<div class="cartpanel" id="cartpanel">CART: <span id="carttext">0 items</span></div>
+<script>
+let count=0;
+document.querySelectorAll('.add').forEach(b=>b.onclick=()=>{
+ count++; document.getElementById('count').textContent=count;
+ document.getElementById('carttext').textContent=count+(count===1?' item':' items');
+ document.getElementById('cartpanel').style.display='block';
+});
+</script>
+</body></html>
