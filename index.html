@@ -66,3 +66,130 @@ footer{border-top:1px solid var(--line);padding:45px 6%;display:flex;justify-con
 
 <section class="section" id="contact"><div class="sectionhead"><div><div class="eyebrow">STAY IN THE LOOP</div><h2>NEW DROPS SOON.</h2></div><div class="muted">Replace this with your email/social links.</div></div></section>
 <footer><
+@media(max-width:600px){.liquid-stage{min-height:95vh}.liquid-name{letter-spacing:-.07em}.product{border-radius:13px}}
+
+
+/* LAVA DRIP SCROLL EFFECT */
+.lava-drip{position:fixed;top:0;width:var(--w,8px);height:var(--h,40px);border-radius:0 0 50% 50%;background:linear-gradient(#ffdd55,#ff7a00 35%,#ff2400 75%,#7a0900);box-shadow:0 0 8px #ff5a00,0 0 22px rgba(255,45,0,.8);z-index:9999;pointer-events:none;transform-origin:top center;animation:lavaFall .95s cubic-bezier(.2,.8,.3,1) forwards;}
+@keyframes lavaFall{0%{transform:scaleY(.15) translateY(0);opacity:0}15%{opacity:1}65%{transform:scaleY(1.15) translateY(25vh)}100%{transform:scaleY(.75) translateY(65vh);opacity:0}}
+.lava-drop{position:fixed;width:9px;height:9px;border-radius:50%;background:#ff3b00;box-shadow:0 0 12px #ff6a00;z-index:9999;pointer-events:none;animation:dropFall 1.05s ease-in forwards;}
+@keyframes dropFall{to{transform:translateY(55vh) scale(.25);opacity:0}}
+.liquid-name{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;letter-spacing:.02em;font-size:clamp(70px,17vw,210px);}
+.hero h1,.section h2,.storytext h2{font-family:'Orbitron',sans-serif;font-weight:800;letter-spacing:-.04em}
+.liquid-stage.hot .liquid-name{background-image:linear-gradient(to top,#130000 0%,#ff2100 28%,#ff8a00 46%,#ffd35a 58%,#fff 63%,#fff 100%);}
+
+</style>
+</head>
+<body>
+<div class="announcement">OFFICIAL YORISHIBO MERCH — LIMITED DROPS</div>
+<nav><div class="logo">YORISHIBO®</div><div class="navlinks"><a href="#shop">SHOP</a><a href="#manga">MANGA</a><a href="#story">STORY</a><a href="#contact">CONTACT</a></div><div class="cart">CART <span id="count">0</span></div></nav>
+
+<section class="hero">
+<div>
+<div class="eyebrow">DRAGON GENERATION / OFFICIAL STORE</div>
+<h1>FIGHT.<br>LAUGH.<br>REPEAT.</h1>
+<p>Original Yorishibo gear for the people who keep moving when the world says stop.</p>
+<a class="btn" href="#shop">SHOP THE DROP</a>
+</div>
+</section>
+
+<section class="section" id="shop">
+<div class="sectionhead"><div><div class="eyebrow">DROP 001</div><h2>THE COLLECTION</h2></div><div class="muted">4 pieces / more coming</div></div><p class="muted" style="margin:-15px 0 28px">Product visuals are shown directly on each item so shoppers can see what they are buying. Final product photos can replace these mockups later.</p>
+<div class="grid">
+<article class="product"><div class="productimg"><img src="yorishibo_core_tee.jpg" alt="Yorishibo Core Tee product mockup"><div class="tag">NEW</div></div><div class="info"><h3>YORISHIBO CORE TEE</h3><div class="price">$35.00</div><button class="add" data-name="Yorishibo Core Tee" data-price="35">ADD TO CART</button></div></article>
+<article class="product"><div class="productimg"><img src="dragon_generation_tee.jpg" alt="Dragon Generation Tee product mockup"></div><div class="info"><h3>DRAGON GENERATION TEE</h3><div class="price">$35.00</div><button class="add" data-name="Dragon Generation Tee" data-price="35">ADD TO CART</button></div></article>
+<article class="product"><div class="productimg"><img src="yorishibo_hoodie.jpg" alt="Yorishibo Hoodie product mockup"><div class="tag">LIMITED</div></div><div class="info"><h3>YORISHIBO HOODIE</h3><div class="price">$65.00</div><button class="add" data-name="Yorishibo Hoodie" data-price="65">ADD TO CART</button></div></article>
+<article class="product"><div class="productimg"><img src="yorishibo_cap.jpg" alt="Burnout Collection Cap product mockup"></div><div class="info"><h3>BURNOUT COLLECTION CAP</h3><div class="price">$28.00</div><button class="add" data-name="Burnout Collection Cap" data-price="28">ADD TO CART</button></div></article>
+</div>
+
+<div class="manga-feature" id="manga">
+  <img src="yorishibo_manga_product.jpg" alt="Yorishibo: The Last Laugh Book 1 product">
+  <div class="manga-copy">
+    <div class="eyebrow">UPCOMING MANGA / BOOK 1</div>
+    <h2>YORISHIBO:<br>THE LAST LAUGH</h2>
+    <p>The manga adaptation of the Yorishibo story you're building across the movies and show. Follow Yorishibo from his ordinary younger years through the fights, friendships, losses, and moments that shape the legend.</p>
+    <div class="coming">COMING SOON — PRE-ORDERS WILL OPEN HERE</div>
+  </div>
+</div>
+</section>
+
+<section class="liquid-stage" id="yorishibo-reveal">
+  <div class="liquid-inner">
+    <div class="liquid-kicker">KEEP SCROLLING / THE NAME WAKES UP</div>
+    <h2 class="liquid-name" id="liquidName">YORISHIBO</h2>
+    <p class="liquid-sub">A liquid-metal nameplate that slowly fills as you scroll. Keep going and the heat rises until the letters start to burn.</p>
+    <div class="fireline"></div>
+  </div>
+</section>
+
+<section class="section" id="story">
+<div class="story"><div class="storybox"><div>YORI.</div></div><div class="storytext"><div class="eyebrow">THE BRAND</div><h2>BUILT FROM<br>THE LEGEND.</h2><p>Yorishibo is more than a character. It's a world, a mindset, and a story about fighting through whatever comes next. This first drop turns that energy into wearable pieces.</p><a class="btn" href="#shop">EXPLORE MERCH</a></div></div>
+</section>
+
+<section class="section" id="contact"><div class="sectionhead"><div><div class="eyebrow">STAY IN THE LOOP</div><h2>NEW DROPS SOON.</h2></div><div class="muted">Replace this with your email/social links.</div></div></section>
+<footer><div>© 2026 YORISHIBO / DRAGON GENERATION</div><div>@.yorishib0 &nbsp; @yori.ig</div></footer>
+<div class="cartpanel" id="cartpanel">CART: <span id="carttext">0 items</span></div>
+<script>
+let count=0;
+document.querySelectorAll('.add').forEach(b=>b.onclick=()=>{
+ count++; document.getElementById('count').textContent=count;
+ document.getElementById('carttext').textContent=count+(count===1?' item':' items');
+ document.getElementById('cartpanel').style.display='block';
+});
+
+// Scroll-driven liquid fill + heat/burn effect.
+const stage=document.getElementById('yorishibo-reveal');
+const name=document.getElementById('liquidName');
+function updateYorishiboHeat(){
+ const r=stage.getBoundingClientRect();
+ const vh=window.innerHeight;
+ const total=Math.max(stage.offsetHeight-vh,1);
+ const progress=Math.min(1,Math.max(0,(vh-r.top)/(total+vh*.35)));
+ const fill=Math.round(progress*100);
+ const heat=Math.max(0,(progress-.42)/.58);
+ name.style.setProperty('--liquid',fill+'%');
+ name.style.setProperty('--heat',heat.toFixed(3));
+ stage.classList.toggle('hot',heat>.05);
+}
+window.addEventListener('scroll',updateYorishiboHeat,{passive:true});
+window.addEventListener('resize',updateYorishiboHeat);
+updateYorishiboHeat();
+</script>
+
+<script>
+(()=>{
+ let last=0, ticking=false;
+ const stage=document.getElementById('yorishibo-reveal');
+ const name=document.getElementById('liquidName');
+ function lava(){
+   if(!stage||!name)return;
+   const r=name.getBoundingClientRect();
+   const count=window.innerWidth<600?2:3;
+   for(let i=0;i<count;i++){
+     const d=document.createElement('div'); d.className='lava-drip';
+     d.style.left=(r.left+r.width*(.15+Math.random()*.7))+'px';
+     d.style.setProperty('--w',(4+Math.random()*8)+'px');
+     d.style.setProperty('--h',(20+Math.random()*55)+'px');
+     document.body.appendChild(d); setTimeout(()=>d.remove(),1000);
+   }
+   for(let i=0;i<2;i++){
+     const d=document.createElement('div'); d.className='lava-drop';
+     d.style.left=(r.left+r.width*(.15+Math.random()*.7))+'px';
+     d.style.top=(r.top+r.height*.75)+'px';
+     document.body.appendChild(d); setTimeout(()=>d.remove(),1100);
+   }
+ }
+ function update(){
+   ticking=false;
+   if(!stage||!name)return;
+   const vh=innerHeight, rect=stage.getBoundingClientRect();
+   const progress=Math.max(0,Math.min(1,(vh-rect.top)/(vh+rect.height*.35)));
+   name.style.setProperty('--liquid',(progress*100).toFixed(1)+'%');
+   name.style.setProperty('--heat',Math.max(0,(progress-.35)/.65).toFixed(2));
+   stage.classList.toggle('hot',progress>.55);
+   if(progress>.18 && progress<.98 && Math.abs(progress-last)>.018){lava();last=progress}
+ }
+ addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true}}, {passive:true});
+ addEventListener('resize',update); update();
+})();
+</script>
